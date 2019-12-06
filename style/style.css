@@ -1,0 +1,58 @@
+html, body {
+	box-sizing: border-box;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("../img/WordItOut-word-cloud-4012657.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.app {
+	background: #eee;
+	border: 1px solid #32435f;
+	border-radius: 5px;
+	box-shadow: 4px 4px 4px #517d9c;
+	color: #333;
+	margin: 10px auto;
+	padding: 10px;
+	padding-bottom: 30px;
+	text-align: center;
+	width: 600px;
+}
+
+h1 {
+	color: #32435f;
+	text-transform: uppercase;
+}
+
+h4 {
+	color: #32435f;
+	margin-bottom: 0;
+}
+
+p {
+	margin: 8px auto;
+}
+
+input {
+	border: 1px solid #32435f;
+	border-radius: 4px;
+	font-size: .8rem;
+	height: 24px;
+	margin: 20px auto;
+	padding-right: 4px;
+	text-align: right;
+}
+
+a {
+	color: #32435f;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+

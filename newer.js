@@ -2,7 +2,7 @@ const Header = () => {
 	return (
 		<header>
 			<h1>Przelicznik walut</h1>
-			<p>W polu formularza wpisz kwotę w złotych, by uzyskać przeliczenie wartości w dolarach, euro i funtach szterlingach</p>
+			<p>W polu formularza wpisz kwotę w złotych,<br/>by uzyskać przeliczenie wartości<br/>w dolarach, euro i funtach szterlingach</p>
 			<p>Dostępne są od razu wszystkie trzy wartości</p>
 		</header>
 	);
@@ -10,12 +10,12 @@ const Header = () => {
 
 const Footer = () => {
 	return (
-		<header>
+		<footer>
 			<h4>Uwaga</h4>
-			<p>Kalkulator wartości ma charakter orientacyjny</p>
-			<p>Bieżące kursy walut można sprawdzić na stronie Narodowego Banku Polskiego pod poniższym linkiem</p>
+			<p>Kalkulator wartości ma charakter orientacyjny<br/>z arbitralnie przyjętym przelicznikiem.</p>
+			<p>Bieżące kursy walut można sprawdzić na stronie<br/>Narodowego Banku Polskiego.</p>
 			<a href="http://www.nbp.pl/home.aspx?f=/statystyka/kursy.html" rel="nofollow" target="_blank">Kursy walut NBP</a>
-		</header>
+		</footer>
 	);
 }
 
@@ -73,8 +73,9 @@ class ExchangeCounter extends React.Component {
 					<input 
 						type="number" 
 						value={this.state.amount} 
-						onChange={this.handleChange} 
-					/>
+						onChange={this.handleChange}
+						autoFocus
+					/> złotych
 				</label>
 {/* tworzona automatycznie lista komponentów: */}
 				{calculators}
