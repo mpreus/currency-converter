@@ -1,6 +1,6 @@
 html, body {
 	box-sizing: border-box;
-	font-size: 18px;
+	font-size: 20px;
 	margin: 0;
 	padding: 0;
 }
@@ -9,50 +9,86 @@ body {
 	background-image: url("../img/WordItOut-word-cloud-4012657.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 100vh;
 }
 
 .app {
 	background: #eee;
-	border: 3px solid #32435f;
-	border-radius: 5px;
-	box-shadow: 4px 4px 4px #517d9c;
+	border: .17rem solid #32435f;
+	border-radius: .33rem;
+	box-shadow: .2rem .2rem .2rem #517d9c;
 	color: #333;
-	margin: 10px auto;
-	padding: 10px;
-	padding-bottom: 30px;
+	margin: .5rem auto;
+	padding: .5rem;
+	padding-bottom: 1.5rem;
 	text-align: center;
-	width: 600px;
+	width: 40rem;
 }
 
 h1 {
 	color: #32435f;
+	font-size: 2.5rem;
 	text-transform: uppercase;
 }
 
 h4 {
 	color: #32435f;
+	font-size: 1.75rem;
 	margin-bottom: 0;
 }
 
 p {
-	margin: 8px auto;
+	font-size: 1rem;
+	margin: .4rem auto;
 }
 
 input {
-	border: 1px solid #32435f;
-	border-radius: 4px;
-	font-size: .8rem;
-	height: 24px;
-	margin: 20px auto;
-	padding-right: 4px;
+	border: .05rem solid #32435f;
+	border-radius: .2rem;
+	font-size: 1.2rem;
+	height: 1.6rem;
+	margin: 1rem auto;
+	padding-right: .2rem;
 	text-align: right;
 }
 
 a {
 	color: #32435f;
+	font-size: 1rem;
 	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
+@media screen and (max-width: 700px) {
+	.app {
+		margin: .5rem auto;
+		padding: .5rem;
+		padding-bottom: 1.5rem;
+		text-align: center;
+		width: 95%;
+	}
+	h1 {
+		font-size: 2rem;
+	}
 
+	h4 {
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 1.25rem;
+		line-height: 1.8rem;
+	}
+	input {
+		font-size: 1.4rem;
+		height: 1.8rem;
+		margin: 1.4rem auto;
+		padding-right: .2rem;
+		text-align: right;
+	}
+	a {
+		font-size: 1.4rem;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+}
